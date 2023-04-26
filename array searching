@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int x[5],i,n;
+clrscr();
+printf("enter arry elements");
+
+for(i=0;i<5;i++)
+{
+scanf("%d",&x[i]);
+}
+printf("entr the no. to be searched in array");
+scanf("%d",&n);
+for(i=0;i<5;i++)
+{
+if(x[i]==n)
+{
+printf("no. found");
+break;
+}
+}
+if(x[i]!=n)
+{
+printf("default value");
+}
+}
