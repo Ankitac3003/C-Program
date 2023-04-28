@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int x[10];
+int i,j,pass,temp;
+printf("enter the elements of array");
+for(i=0;i<10;i++)
+{
+scanf("%d",&x[i]);
+}
+for(pass=1;pass<10;pass++)
+{
+for(j=0;j<10-pass;j++)
+{
+if(x[j] > x[j+1])
+{
+temp=x[j+1];
+x[j+1]=x[j];
+x[j]=temp;
+}
+}
+}
+for(i=0;i<10;i++)
+{
+printf("\n%d",x[i]);
+}
+getch();
+clrscr();
+}
