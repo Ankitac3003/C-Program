@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int x;
+int *p;
+clrscr();
+x=150;
+p=&x;
+printf("\n%d",*p);
+printf("\n%d",*p+30);
+printf("\n%d",*p+50);
+getch();
+}
